@@ -13,13 +13,13 @@ Using a latent space of dimension 5:
 |                 | MNIST  | Reconstructed MNIST |
 |-----------------|--------|---------------------|
 | Accuracy        | 98.7%  | 95.1%               |
-| Occupied Memory | 47.5MB | ~1.6MB*             |
+| Occupied Memory | 47.5MB | ~1.6MB\*             |
 
-*Compressed data = 1.2MB + Decoder weights = 434KB 
+\*Compressed data = 1.2MB + Decoder weights = 434KB 
 
 *Note* MNIST images are memorized as unsigned byte, so they use 1 byte per value. Compressed data is memorized as float, so every value use 4 byte. 
-28*28*60,000 + 60,000 (labels) + some additional metadata = ~47.5MB
-5*60,000*4 + 60,000 + decoder weights = ~1.6MB
+28\*28\*60,000 + 60,000 (labels) + some additional metadata = ~47.5MB
+5\*60,000\*4 + 60,000 + decoder weights = ~1.6MB
 Compression factor = ~30 (97% less memory required). 
 
 ## Requirements
