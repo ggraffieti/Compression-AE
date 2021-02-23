@@ -1,0 +1,7 @@
+.idea/
+*.png
+data/*
+!data/models
+data/models/*
+!data/models/.gitkeep
+**/__pycache__/*
