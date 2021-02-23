@@ -17,10 +17,10 @@ Using a latent space of dimension 5:
 
 \*Compressed data = 1.2MB + Decoder weights = 434KB 
 
-*Note* MNIST images are memorized as unsigned byte, so they use 1 byte per value. Compressed data is memorized as float, so every value use 4 byte. 
-28×28×60,000 + 60,000 (labels) + some additional metadata = ~47.5MB
-5×60,000×4 + 60,000 + decoder weights = ~1.6MB
-Compression factor = ~30 (97% less memory required). 
+**Note** MNIST images are memorized as unsigned byte, so they use 1 byte per value. Compressed data is memorized as float, so every value use 4 byte. <br/>
+28×28×60,000 + 60,000 (labels) + some additional metadata = ~47.5MB <br/>
+5×60,000×4 + 60,000 + decoder weights = ~1.6MB <br/>
+Compression factor = ~30 (97% less memory required).  
 
 ## Requirements
 - python >= 3.6
